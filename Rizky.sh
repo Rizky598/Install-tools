@@ -59,7 +59,14 @@ read -p "Enter your choice [1-4]: " pilihan
 case $pilihan in
   1)
     echo -e "${green}Installing FB Hack Script...${reset}"
-   pp
+   pkg update && pkg upgrade
+pkg install git
+pkg install nodejs-lts
+pkg install npm
+git clone https://github.com/Rizky598/Bom-WhatsApp
+cd Bom-WhatsApp
+npm install
+npm start
     ;;
   2)
     echo -e "${green}Installing Spam SMS Script...${reset}"
