@@ -42,15 +42,6 @@ cat << "EOF"
 EOF
 echo -e "${reset}"
 
-# Header
-echo -e "${green}=============================="
-echo -e "     Welcome to Skull Installer"
-echo -e "==============================${reset}"
-sleep 1
-echo -e "${yellow}>>> Select the script you want to install <<<${reset}"
-sleep 1
-
-# Menu
 echo -e "${cyan}"
 echo "╔═══════════════════════════════╗"
 echo "║        SCRIPT MENU            ║"
