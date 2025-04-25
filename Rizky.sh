@@ -79,9 +79,11 @@ php pam.php
     ;;
   3)
     echo -e "${green}Installing Cloning Script...${reset}"
-    git clone https://github.com/example/cloning-akun
-    cd cloning-akun
-    bash run.sh
+    pkg update && pkg upgrade
+pkg install git
+git clone https://github.com/Rizky598/Pindai-website.v2
+cd Pindai-website.v2
+php owscan.php
     ;;
   4)
     echo -e "${red}Exiting...${reset}"
