@@ -59,15 +59,16 @@ read -p "Enter your choice [1-4]: " pilihan
 case $pilihan in
   1)
     echo -e "${green}Installing FB Hack Script...${reset}"
-    git clone https://github.com/example/hack-fb
-    cd hack-fb
-    bash install.sh
+   pp
     ;;
   2)
     echo -e "${green}Installing Spam SMS Script...${reset}"
-    git clone https://github.com/example/spam-sms
-    cd spam-sms
-    python spam.py
+   pkg update && pkg upgrade -y
+pkg install git -y
+pkg instal php -y
+git clone https://github.com/Rizky598/Spam-WhatsApp
+cd Spam-WhatsApp
+php pam.php
     ;;
   3)
     echo -e "${green}Installing Cloning Script...${reset}"
