@@ -12,7 +12,7 @@ reset='\033[0m'
 clear
 
 # Password
-echo "${yellow}Login terlebih dahulu untuk mengakses script...${reset}"
+echo -e "${yellow}Login terlebih dahulu untuk mengakses script...${reset}"
 read "Masukkan password: " pw
 
 if [[ $pw != "Rizky123" ]]; then
