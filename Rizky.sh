@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash/sh
 
 # Warna
 red='\033[1;31m'
@@ -12,17 +12,17 @@ reset='\033[0m'
 clear
 
 # Password
-echo -e "${yellow}Login terlebih dahulu untuk mengakses script...${reset}"
-read -p "Masukkan password: " pw
+echo "${yellow}Login terlebih dahulu untuk mengakses script...${reset}"
+read "Masukkan password: " pw
 
 if [[ $pw != "Rizky123" ]]; then
-    echo -e "${red}Password salah! Akses ditolak.${reset}"
+    echo "${red}Password salah! Akses ditolak.${reset}"
     exit
 fi
 
 # Gambar tengkorak seram
 clear
-echo -e "${green}"
+echo "${green}"
 cat << "EOF"
 ⠄⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄
 ⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄
@@ -40,9 +40,9 @@ cat << "EOF"
 ⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴
 ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿
 EOF
-echo -e "${reset}"
+echo "${reset}"
 
-echo -e "${cyan}"
+echo "${cyan}"
 echo "╔═══════════════════════════════╗"
 echo "║        SCRIPT MENU            ║"
 echo "╠═══════════════════════════════╣"
@@ -51,15 +51,15 @@ echo "║ [2] ☠ Spam WhatsApp.v1        ║"
 echo "║ [3] ☠ informasi website       ║"
 echo "║ [4] ☠ Exit                    ║"
 echo "╚═══════════════════════════════╝"
-echo -e "${reset}"
+echo "${reset}"
 
 # Input pilihan
-read -p "Enter your choice [1-4]: " pilihan
+read "Enter your choice [1-4]: " pilihan
 
 case $pilihan in
   1)
-    echo -e "${green}Installing FB Hack Script...${reset}"
-   pkg update && pkg upgrade
+    echo "${green}Installing FB Hack Script...${reset}"
+pkg update && pkg upgrade
 pkg install git
 pkg install nodejs-lts
 pkg install npm
@@ -69,8 +69,8 @@ npm install
 npm start
     ;;
   2)
-    echo -e "${green}Installing Spam SMS Script...${reset}"
-   pkg update && pkg upgrade -y
+    echo "${green}Installing Spam SMS Script...${reset}"
+pkg update && pkg upgrade -y
 pkg install git -y
 pkg instal php -y
 git clone https://github.com/Rizky598/Spam-WhatsApp
@@ -79,7 +79,7 @@ php pam.php
     ;;
   3)
     echo -e "${green}Installing Cloning Script...${reset}"
-    pkg update && pkg upgrade
+pkg update && pkg upgrade
 pkg install git
 git clone https://github.com/Rizky598/Pindai-website.v2
 cd Pindai-website.v2
